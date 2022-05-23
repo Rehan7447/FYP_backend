@@ -1,0 +1,29 @@
+{
+  "name": "user-authenticiation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/server.js",
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently \"npm start\" \"npm run client\" "
+  },
+  "author": "Rehan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.4",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.16",
+    "otp-generator": "^4.0.0",
+    "react-foundation": "^0.9.7",
+    "react-router-dom": "^6.1.1",
+    "request": "^2.88.2"
+  }
+}
